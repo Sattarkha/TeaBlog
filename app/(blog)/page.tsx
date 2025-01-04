@@ -13,6 +13,7 @@ import * as demo from "@/sanity/lib/demo";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { heroQuery, settingsQuery } from "@/sanity/lib/queries";
 
+
 function Intro(props: { title: string | null | undefined; description: any }) {
   const title = props.title || demo.title;
   const description = props.description?.length
@@ -106,6 +107,8 @@ export default async function Page() {
           </Suspense>
         </aside>
       )}
+
+      
     </div>
   );
 }
